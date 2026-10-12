@@ -1,3 +1,16 @@
+import streamlit as st
+import requests
+from datetime import datetime, timedelta
+
+# YouTube API Key
+API_KEY = "AIzaSyCuzDaR-kYdBy-29GT-k_RCIHS90atb714"
+YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
+YOUTUBE_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
+YOUTUBE_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels"
+
+# Streamlit App Title
+st.title("YouTube Viral Topics Tool")
+
 # Input Fields
 days = st.number_input("Enter Days to Search (1-30):", min_value=1, max_value=30, value=5)
 
